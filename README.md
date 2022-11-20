@@ -11,12 +11,15 @@ Data set :
     253 - true(1)
     8- features
 
-model_set_01 
+model_01 
     - no feature selection, 
-    - udersampled, sampling_strategy= 0.7, random_state = 0 so false instances become 361. (130 samples removed)
-    - then oversapled, random_state = 0,  (108 dummy samples were added)
+    - undersampled, sampling_strategy= 0.7, random_state = 0 so false instances become 361. (130 samples removed)
+    - then oversampled, random_state = 0,  (108 dummy samples were added)
     - 361/361 samples - (total = 722)
-    - use train_test_split for validation
+    - use cross validation
+    - Random forest - accuracy - 80.20%
+
+
 
 
 
@@ -50,6 +53,7 @@ model_set_03
     - no sampling
     - 96/203 samples - (total = 192)
     - use train_test_split for validation
+    - random forest - Accuracy(%) =  75.0
 
 model_set_04
     - no feature selection, 
@@ -57,6 +61,14 @@ model_set_04
     - then oversapled, random_state = 0,  (41 dummy samples were added)
     - 137/137 samples - (total = 274)
     - use cross validation for validation vc = 5
+    - random forest - 82.49 accuracy with a standard deviation of 4.65
 
+
+model_set_05
+    - no feature selection, 
+    - udersampled, random_state = 0 so false instances become 96. (107 samples removed)
+    - 96/96 samples - (total = 192)
+    - use cross validation for validation vc = 5
+    - navie bayers - 80.11 accuracy with a standard deviation of 17.72
 
 # Hypertension transcriptome:
