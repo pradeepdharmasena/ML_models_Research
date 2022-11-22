@@ -16,8 +16,21 @@ model_01
     - undersampled, sampling_strategy= 0.7, random_state = 0 so false instances become 361. (130 samples removed)
     - then oversampled, random_state = 0,  (108 dummy samples were added)
     - 361/361 samples - (total = 722)
+    - min max scalling
     - use cross validation
-    - Random forest - accuracy - 80.20%
+    - ['BloodPressure', 'Insulin', 'BMI', 'DiabetesPedigreeFunction'] - outliers are filled with mean
+    - Random forest - accuracy - 82.142 +/- 4.041%
+
+
+model_02
+    - no feature selection, 
+    - undersampled, sampling_strategy= 0.7, random_state = 0 so false instances become 361. (130 samples removed)
+    - then oversampled, random_state = 0,  (108 dummy samples were added)
+    - 361/361 samples - (total = 722)
+    - min max scaling
+    - no outlier handling
+    - use cross validation
+    - Random forest - accuracy - 81.041 +/- 5.079%
 
 
 
